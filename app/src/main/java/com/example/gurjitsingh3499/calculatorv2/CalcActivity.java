@@ -1,9 +1,10 @@
 package com.example.gurjitsingh3499.calculatorv2;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
-public class CalcActivity extends AppCompatActivity {
+
+public class CalcActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
