@@ -7,29 +7,178 @@
     tools:context="com.example.gurjitsingh3499.calculatorv2.CalcActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/background_light"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="165dp"
+            android:layout_height="192dp"
             android:background="#38c5c6"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="125dp"
                 android:layout_gravity="right"
                 android:gravity="right"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:paddingTop="50dp"
+                android:paddingTop="75dp"
                 android:text="321"
                 android:textColor="#ffffff"
                 android:textSize="45dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:alpha="1"
+                android:background="@android:color/background_light"
+                android:text="7"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:alpha="1"
+                android:background="@android:color/background_light"
+                android:text="8"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:alpha="1"
+                android:background="@android:color/background_light"
+                android:text="9"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:src="@drawable/divide" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:alpha="1"
+                android:background="@android:color/background_light"
+                android:text="4"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:alpha="1"
+                android:background="@android:color/background_light"
+                android:text="5"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:alpha="1"
+                android:background="@android:color/background_light"
+                android:text="6"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:src="@drawable/multiply" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:alpha="1"
+                android:background="@android:color/background_light"
+                android:text="1"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:alpha="1"
+                android:background="@android:color/background_light"
+                android:text="2"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:alpha="1"
+                android:background="@android:color/background_light"
+                android:text="3"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:src="@drawable/subtract" />
         </LinearLayout>
 
         <LinearLayout
@@ -39,47 +188,53 @@
             android:weightSum="4">
 
             <Button
-                android:id="@+id/button"
-                android:layout_width="80dp"
+                android:id="@+id/buttonCLR"
+                android:layout_width="160dp"
                 android:layout_height="80dp"
-                android:layout_weight="1"
-                android:text="7" />
+                android:layout_weight="2"
+                android:alpha="1"
+                android:background="@android:color/background_light"
+                android:text="CLEAR"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/button0"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:text="8" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:text="9" />
+                android:alpha="1"
+                android:background="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/imageButton4"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:src="@drawable/divide" />
+                android:background="@android:color/background_light"
+                android:src="@drawable/add" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="#00ffffff"
+        android:src="@drawable/equal"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.332" />
+
 </android.support.constraint.ConstraintLayout>
